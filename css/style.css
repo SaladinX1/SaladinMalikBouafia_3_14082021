@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "Shrikhand", "Roboto", "serif";
+  src: url("../fonts/Shrikhand-Regular.otf") format("otf"), url("../fonts/Shrikhand-Regular.eot") format("eot"), url("../fonts/Shrikhand-Regular.ttf") format("truetype") url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Thin.ttf") format("truetype"), url("../fonts/Roboto-ThinItalic.ttf") format("truetype"), url("../fonts/Roboto-MediumItalic.ttf") format("truetype"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-LightItalic.ttf") format("truetype"), url("../fonts/Roboto-Light.ttf") format("truetype"), url("../fonts/Roboto-Italic.ttf") format("truetype"), url("../fonts/Roboto-BoldItalic.ttf") format("truetype"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-BlackItalic.ttf") format("truetype"), url("../fonts/Roboto-Black.ttf") format("truetype");
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.brand {
+  font-family: "Shrikhand";
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3eaea;
+}
+
+.reservation__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #dbd3d3;
+  width: 100%;
+}
+
+.reservation__location i {
+  padding-right: 20px;
+}
+
+.reservation__Discover {
+  font-size: 1.5rem;
+}
+
+.btn {
+  border: 1px solid transparent;
+  background-color: #e74be4;
+  margin: 10px 0 30px 0;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+.btn p {
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0 25px 0 25px;
+}
+
+.functionality {
+  display: flex;
+  flex-direction: column;
+}
+
+.functionality__restaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f3eaea;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px gray;
+}
+
+/*# sourceMappingURL=style.css.map */
