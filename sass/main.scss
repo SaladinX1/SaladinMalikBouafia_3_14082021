@@ -45,12 +45,13 @@ header {
 
     display: flex;
     justify-content: center;
-    &brand {
+    & h1 {
 
         font-family: "Shrikhand";
     }
 
 }
+
 
 
 .reservation {
@@ -70,31 +71,35 @@ header {
         font-size: 1.2rem;
         background-color: rgb(219, 211, 211);
         width: 100%;
-        &i {
-            padding-right: 20px;
-        }
+    
     }
     &__Discover {
 
         font-size: 1.5rem;
     }
-    &btn {
-
-        border: 1px solid transparent;
-        background-color: $color-secondary;
-        margin: 10px 0 30px 0;
-        border-radius: 50px;
-        box-shadow: 2px 2px 5px gray;
     
-        &__p {
-    
-            font-size: 1.4rem;
-            color: #fff;
-            padding: 0 25px 0 25px;
-        }
-    }
 }
 
+.reservation__location i {
+
+    padding-right: 20px;
+}
+
+.btn {
+
+    border: 1px solid transparent;
+    background-color: $color-secondary;
+    margin: 10px 0 30px 0;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px gray;
+
+    &__p {
+
+        font-size: 1.4rem;
+        color: #fff;
+        padding: 0 25px 0 25px;
+    }
+}
 
 
 .functionality {
@@ -109,88 +114,102 @@ header {
     }
     &__restaurant {
 
-        @include choice;
-    
-        &__one {
+    @include choice;
+    &--one {
 
-            position: absolute;
-            height: 20px;
-            width: 20px;
-            padding: 5px;
-            margin: 0 20px 0 0;
-            background-color: #9356DC;
-            border-radius: 50%;
-            color: #fff;
-            transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
-        }
-        &i {
-             padding-left: 25px;
-             padding-right: 25px;
-             font-size: 1.3rem;
-             color: rgb(160, 152, 152);
-            
-        }
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+        margin: 0;
+        background-color: #9356DC;
+        border-radius: 50%;
+        color: #fff;
+        transform: translateX(-50%);
+    
     }
+   }
 
 }
+
+.functionality__restaurant i {
+
+    padding-right: 25px;
+    font-size: 1.3rem;
+    color: rgb(160, 152, 152);
+}
+
 
 .restaurants {
 
     background-color: $color--Background;
     padding: 80px 15px 80px 15px;
-
     &__menu {
+
+
         background-color: #fff;
         height: 400px;
         border-radius: 20px 20px 20px 20px;
         margin-top: 35px;
-        &__image {
+        &--imageDiv {
+
+            position: relative;
+            & p {
+        
+                margin: 0;
+            }
+         }
+         &--image  {
 
             object-fit: cover;
+            
             width: 100%;
             height: 300px;
             border-radius: 20px 20px 0 0;
-            position: relative;
-            >p {
+            & p {
+        
                 margin: 0;
-            }
-            &__new {
-
-                display: flex;
-                position: absolute;
-                left: 200px;
-                color: rgb(19, 124, 19);
-                background-color: #99E2D0;
-                padding: 10px 20px 10px 20px;
-                margin: 0;
-                & p {
-                    margin: 0;
-                }
             
             }
         }
+        &--new {
 
-        &menuDescription {
+            display: flex;
+            position: absolute;
+            left: 200px;
+            color: rgb(19, 124, 19);
+            background-color: #99E2D0;
+            padding: 10px 20px 10px 20px;
+            margin: 0;
+        
+        
+            & p {
+                margin: 0;
+            }
+        
+        }
+        &--Description {
 
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             padding: 0 20px 20px 20px;
             font-size: 1.1rem;
-            &__menuName {
-
-                font-weight: bold;
-            
-            }
-
+        
+        
         }
+        &--Name {
 
-
+            font-weight: bold;
+        
+        }
+        }
     }
 
-}
-
+ 
 
 .heart-fill i {
 
@@ -205,8 +224,9 @@ header {
 }
 
 
-footer {
+.Contact {
 
+   
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -214,22 +234,23 @@ footer {
     color: #fff;
     padding: 10px 0 15px 30px;
     & h1 {
+
         font-family: 'Shrikhand';
-    }
-    &Contact {
+       }
+    &__choices {
 
         font-family: 'Roboto';
-    &i {
-        font-size: 1rem;
-        padding-right: 15px;
-
-    }
-
-    }
-
+    
+    } 
 }
 
 
+.Contact__choices i {
+
+    font-size: 1rem;
+    padding-right: 15px;
+
+}
 
 
 
