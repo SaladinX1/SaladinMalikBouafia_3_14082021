@@ -157,6 +157,8 @@ header {
         &--imageDiv {
 
             position: relative;
+            
+            
             & p {
         
                 margin: 0;
@@ -179,7 +181,8 @@ header {
 
             display: flex;
             position: absolute;
-            left: 200px;
+            top: 20px;
+            right: 20px;
             color: rgb(19, 124, 19);
             background-color: #99E2D0;
             padding: 10px 20px 10px 20px;

@@ -123,7 +123,8 @@ header h1 {
 .restaurants__menu--new {
   display: flex;
   position: absolute;
-  left: 200px;
+  top: 20px;
+  right: 20px;
   color: #137c13;
   background-color: #99E2D0;
   padding: 10px 20px 10px 20px;
