@@ -9,14 +9,20 @@
 .btn {
   border: 1px solid transparent;
   background-color: #FF79DA;
-  margin: 10px 0 30px 0;
+  margin: 20px 0 40px 0;
   border-radius: 50px;
   box-shadow: 2px 2px 5px gray;
 }
 .btn__p {
   font-size: 1.4rem;
   color: #fff;
-  padding: 0 25px 0 25px;
+  padding: 0 40px 0 40px;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 15px 0;
 }
 
 .heart-fill i {
@@ -32,6 +38,7 @@ header {
   justify-content: center;
 }
 header h1 {
+  margin: 10px 0 10px 0;
   font-family: "Shrikhand";
 }
 
@@ -177,31 +184,27 @@ main {
   padding-right: 15px;
 }
 
-/** Page 2 **/
+/** PAGE 2 MENU **/
+.omf__menu {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.omf__menu i {
+  position: absolute;
+  left: 28px;
+  top: 40%;
+  font-size: 1.3rem;
+}
+.omf__menu h1 {
+  margin: 10px 0 10px 0;
+}
+
 .page__2 {
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
 }
 
-.omg__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.note__enchantee--titleDiv {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.note__enchantee--titleDiv i {
-  font-size: 1.3rem;
-}
-.note__enchantee--title {
-  text-align: center;
-  font-family: "Shrikhand", sans-serif;
-  margin: 0;
-}
 .note__enchantee--image {
   margin: 0;
 }
@@ -209,6 +212,47 @@ main {
   object-fit: cover;
   width: 100%;
   height: 400px;
+}
+
+.menu__Div {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__Section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu__Section i {
+  font-size: 1.3rem;
+  margin: 0 0 0 10px;
+}
+.menu__Section--title {
+  text-align: center;
+  font-family: "Shrikhand", sans-serif;
+  margin: 0 10px 0 0;
+}
+.menu__Section--Division {
+  margin: 25px 0 15px 0;
+}
+.menu__Section--Name {
+  margin: 16px 0 16px 20px;
+  border-bottom: 3px solid #99E2D0;
+  padding: 0 5px 5px 0;
+}
+.menu__Section--Div {
+  padding: 10px;
+  margin: 20px 20px 20px 20px;
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+}
+.menu__Section--Div p {
+  margin: 5px;
+}
+.menu__Section--plat {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
