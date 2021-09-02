@@ -53,6 +53,7 @@ main {
     flex-direction: column;
     margin: 20px;
 
+    
     &__title {
 
         margin-left: 15px;
@@ -60,9 +61,14 @@ main {
     &__restaurant {
 
     @include choice;
-
-    background-color: #fff;
+    background-color: $color-Background;
     transition: background-color 1000ms ;
+    & i {
+
+        padding-right: 25px;
+        font-size: 1.3rem;
+        color: rgb(204, 199, 199);
+    }
 
     &:hover{
 
@@ -89,18 +95,20 @@ main {
 
 }
 
-.functionality__restaurant i {
 
-    padding-right: 25px;
-    font-size: 1.3rem;
-    color: rgb(160, 152, 152);
-}
 
 
 .restaurants {
 
     background-color: $color-Background;
     padding: 80px 15px 80px 15px;
+
+    & a {
+
+        color: #000;
+        text-decoration: none;
+    }
+
     &__menu {
 
 
@@ -218,22 +226,39 @@ main {
             
         }
 
-    .page__2 {
 
-        background-color: $color-Background ;
-        border-radius: 50px 50px 0 0;
-    }
-
-    .note__enchantee {
-        &--image {
+        .menu__image {
+        
             margin: 0;
             & img {
             object-fit:cover;
             width: 100%;
-            height: 400px;
-            }      
-        }
+            height: 400px;  
+        }  
     }
+
+        .image {
+            
+            &--enchantee{
+
+                position: relative; 
+                z-index:-1; 
+
+
+            }
+
+        }
+
+    .page__2 {
+
+        background-color: $color-Background ;
+        border-radius: 50px 50px 0 0;
+        z-index: 1;
+       
+        
+        
+
+    }     
 
     .menu__Div {
 
@@ -247,6 +272,7 @@ main {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            margin: 30px 20px 20px 20px;
 
             & i {
              font-size: 1.3rem;
