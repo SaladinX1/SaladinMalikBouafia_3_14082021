@@ -3,6 +3,7 @@ header {
 
     display: flex;
     justify-content: center;
+
     & h1 {
 
         margin: 10px 0 10px 0;
@@ -105,6 +106,14 @@ main {
     background-color: $color-Background;
     padding: 80px 15px 80px 15px;
 
+
+    &__border {
+
+        border-bottom: 3px solid $color-tertiary;
+        margin: 0 0 0 20px;
+        width: 40px;
+        
+    }
     & a {
 
         color: #000;
@@ -182,6 +191,8 @@ main {
         }
     }
 
+  
+    
 
     .Contact {
 
@@ -199,20 +210,23 @@ main {
         &__choices {
     
             font-family: 'Roboto';
+            & i {
+
+                font-size: 1rem;
+                padding-right: 15px;
+            }
         
         } 
     }
     
     
-    .Contact__choices i {
     
-        font-size: 1rem;
-        padding-right: 15px;
-    
-    } 
      
     /** PAGE 2 MENU **/
 
+
+
+    
     .omf__menu {
 
         display: flex;
@@ -225,6 +239,17 @@ main {
                 left: 28px; 
                 top: 40%;
                 font-size: 1.3rem;
+
+                &:hover{
+
+                    transform: rotate(3turns);
+                    & body  {
+
+                        color: rgba(167, 26, 172, 0.5);
+    
+                    }
+                }
+                
     
             }
     
@@ -297,8 +322,7 @@ main {
             }
             &--Name{
 
-                margin: 16px 20px 16px 20px;
-                border-bottom: 3px solid $color-tertiary;
+                margin: 16px 20px 3px 20px;
                 padding: 0 5px 5px 0 ;
 
                 
@@ -326,4 +350,5 @@ main {
     
 
     
+
     
