@@ -33,7 +33,10 @@ main {
         font-size: 1.2rem;
         background-color: #e4e0e0;
         width: 100%;
-    
+        & i {
+
+        padding-right: 20px;
+        }
     }
     &__Discover {
 
@@ -42,10 +45,7 @@ main {
     
 }
 
-.reservation__location i {
 
-    padding-right: 20px;
-}
 
 .functionality {
 
@@ -62,7 +62,7 @@ main {
 
     @include choice;
     background-color: $color-Background;
-    transition: background-color 1000ms ;
+    transition: background-color 700ms, box-shadow 700ms ;
     & i {
 
         padding-right: 25px;
@@ -73,6 +73,8 @@ main {
     &:hover{
 
         background-color: $lightness-hover;
+        box-shadow: 3px 3px 10px gray;
+
 
     }
     &--one {
