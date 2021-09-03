@@ -1,3 +1,4 @@
+@keyframes display-menu {}
 @font-face {
   font-family: "Shrikhand";
   src: url("../fonts/Shrikhand-Regular.ttf") format("truetype"), url("../fonts/Shrikhand-Regular.eot") format("eot"), url("../fonts/Shrikhand-Regular.woff") format("woff"), url("../fonts/Shrikhand-Regular.svg") format("svg");
@@ -26,11 +27,15 @@
 }
 
 .heart-fill i {
-  color: black;
-  transition: color 100ms;
+  transition: background-image 800ms ease-in-out, background-color 800ms ease-in-out;
 }
-.heart-fill i:active {
-  color: #FF79DA;
+.heart-fill i:active::before {
+  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
+  background-color: #fff;
+}
+.heart-fill i::before {
+  background-image: #fff;
+  background-color: #fff;
 }
 
 header {
@@ -89,7 +94,7 @@ main {
   border-radius: 30px;
   box-shadow: 2px 2px 5px gray;
   background-color: #f2f2f2;
-  transition: background-color 700ms, box-shadow 700ms;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 .functionality__restaurant i {
   padding-right: 25px;
@@ -133,7 +138,7 @@ main {
   border-radius: 20px 20px 20px 20px;
   margin-top: 35px;
   transform: scale(1);
-  transition: transform 500ms;
+  transition: transform 500ms ease-in-out;
 }
 .restaurants__menu:hover {
   transform: scale(1.02);
@@ -197,6 +202,20 @@ main {
 }
 
 /** PAGE 2 MENU **/
+/************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
+/****************************************************************************************************/
 .omf__menu {
   display: flex;
   align-items: center;
@@ -207,12 +226,6 @@ main {
   left: 28px;
   top: 40%;
   font-size: 1.3rem;
-}
-.omf__menu i:hover {
-  transform: rotate(3turns);
-}
-.omf__menu i:hover body {
-  color: rgba(167, 26, 172, 0.5);
 }
 .omf__menu h1 {
   margin: 10px 0 10px 0;
@@ -225,9 +238,6 @@ main {
   object-fit: cover;
   width: 100%;
   height: 400px;
-}
-
-.image--enchantee {
   position: relative;
   z-index: -1;
 }
@@ -270,13 +280,30 @@ main {
   margin: 20px 20px 20px 20px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
+  transform: scale(1);
+  transition: transform 300ms ease-in-out;
 }
 .menu__Section--Div p {
   margin: 5px;
+  font-weight: bold;
+}
+.menu__Section--Div:hover {
+  transform: scale(1.05);
 }
 .menu__Section--plat {
   display: flex;
   justify-content: space-between;
+}
+.menu__Section--plat > p {
+  font-weight: normal;
+}
+.menu__Section--plat--check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 90%;
+  font-weight: bold;
 }
 
 @media all and (min-width: 580px) {
@@ -346,7 +373,7 @@ main {
     color: #9356DC;
   }
   .restaurants__border {
-    border-bottom: 3px solid #99E2D0;
+    border-bottom: 3px solid #FF79DA;
     margin: 0;
     width: 100%;
   }
@@ -354,7 +381,7 @@ main {
     color: #000;
     text-decoration: none;
     width: 40%;
-    margin: 35px 40px 35px 40px;
+    margin: 35px 20px 35px 20px;
   }
   .restaurants__restaurantDiv {
     display: flex;
@@ -409,6 +436,21 @@ main {
   }
   .restaurants__menu--Name {
     font-weight: bold;
+  }
+
+  .menu__Section--Div {
+    padding: 10px;
+    margin: 20px 20px 20px 20px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    transform: scale(1), scaleX(right);
+    transition: transform 300ms ease-in-out;
+  }
+  .menu__Section--Div p {
+    margin: 5px;
+  }
+  .menu__Section--Div:hover {
+    transform: scale(1.02), scaleX(15px);
   }
 }
 

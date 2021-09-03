@@ -1,7 +1,7 @@
 .btn {
 
     border: 1px solid transparent;
-    background-image: linear-gradient(180deg, #FF79DA , #9356DC);
+    background-image: $gradient;
     margin: 20px 0 40px 0;
     border-radius: 50px;
     box-shadow: 2px 2px 5px gray;
@@ -23,14 +23,27 @@
  }
 
 
-.heart-fill i {
+ 
+ 
 
-    color: rgb(0, 0, 0);
-   transition: color 100ms ;
-  
-  &:active {
+ .heart-fill i {
 
-    color:#FF79DA;
-  }
+    
+    transition: background-image 800ms ease-in-out, background-color 800ms ease-in-out;
+
+  &:active{
+    &::before {
+        
+        background-image: $gradient;
+        background-color: $Background-div;
+}
+    
+}
+&::before {
+    
+    background-image: $Background-div;
+    background-color: $Background-div;
+}
+
 
 }
