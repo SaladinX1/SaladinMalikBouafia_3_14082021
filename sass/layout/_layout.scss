@@ -128,10 +128,10 @@ main {
         border-radius: 20px 20px 20px 20px;
         margin-top: 35px;
         transform: scale(1);
-        transition: transform 500ms ease-in-out;
+        transition: transform 200ms ease-in-out;
         &:hover {
 
-          transform: scale(1.02);
+          transform: scale(1.03);
 
          }
         &--imageDiv {
@@ -328,6 +328,7 @@ main {
                 margin: 20px 20px 20px 20px;
                 background-color: $Background-div;
                 border-radius: 20px 20px 20px 20px ;
+                box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.1);
                 transform: scale(1);
                 transition: transform 200ms ease-in-out;
                 
@@ -360,8 +361,28 @@ main {
                 justify-content:flex-start;
                 margin-right: 90%;
                 font-weight: bold;
-                
                }
+               &--checkDiv  {
+                display: none;
+                
+                position: absolute;
+                background: $color-tertiary;
+                border-radius: 0 15px 15px 0;
+                right: 0px;
+                padding: 0 13px;
+                height: 100%;
+                i {
+                    font-size: 30px;
+                    color: white;
+                    transform: rotate(180deg);
+                    animation: rotate 0.5s both;
+                }
+                &:hover .menu__Section--checkDiv {
+                    @include flexbox-center;
+                    animation: slide-left 0.5s ease ;
+                    transform-origin: right;
+                }
+            }
 
             }
             
@@ -371,4 +392,3 @@ main {
 
     
 
-    
