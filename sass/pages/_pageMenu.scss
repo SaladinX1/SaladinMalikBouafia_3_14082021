@@ -1,0 +1,45 @@
+.page__2 {
+
+    background-color: $color-Background ;
+    border-radius: 50px 50px 0 0;
+    margin-top: -60px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    max-width: 1300px;
+
+
+}     
+
+.menu__Div {
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.menu__Section {
+
+    &--Div {
+
+        
+        padding: 10px;
+        margin: 20px 20px 20px 20px;
+        background-color: $Background-div;
+        border-radius: 20px 20px 20px 20px ;
+        transform: scale(1), scaleX(right);
+        transition: transform 300ms ease-in-out;
+        & p {
+
+            margin: 5px;
+        }
+        &:hover {
+
+            transform: scale(1.02);
+        }
+        
+
+    }
+
+
+}

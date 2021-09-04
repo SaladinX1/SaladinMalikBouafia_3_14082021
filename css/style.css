@@ -89,16 +89,18 @@
   margin: 15px 0 15px 0;
 }
 
-.heart-fill i {
-  transition: background-image 800ms ease-in-out, background-color 800ms ease-in-out;
+.heart-fill {
+  transition: background-image 200ms ease-in-out, background-color 800ms ease-in-out;
 }
-.heart-fill i:active::before {
-  background-image: linear-gradient(180deg, #FF79DA, #9356DC);
-  background-color: #fff;
+.heart-fill .full {
+  display: none;
 }
-.heart-fill i::before {
-  background-image: #fff;
-  background-color: #fff;
+.heart-fill:active .full {
+  display: block;
+  color: #ca3d9b;
+}
+.heart-fill:active .empty {
+  display: none;
 }
 
 header {
@@ -108,6 +110,10 @@ header {
 header h1 {
   margin: 10px 0 10px 0;
   font-family: "Shrikhand";
+}
+
+.borderShadow {
+  box-shadow: 2px 1px 1px #f2f2f2;
 }
 
 main {
@@ -141,7 +147,8 @@ main {
 .functionality {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  justify-content: center;
+  margin: auto;
 }
 .functionality__title {
   margin-left: 15px;
@@ -153,11 +160,11 @@ main {
   align-items: center;
   background-color: #f2f2f2;
   padding: 15px 15px 15px 0;
-  margin: 15px 15px 15px 0;
+  margin: 15px 15px 15px 15px;
   border-radius: 30px;
   box-shadow: 2px 2px 5px gray;
-  background-color: #f2f2f2;
-  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+  background-image: #f2f2f2;
+  transition: background-image 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 .functionality__restaurant i {
   padding-right: 25px;
@@ -165,8 +172,11 @@ main {
   color: #ccc7c7;
 }
 .functionality__restaurant:hover {
-  background-color: white;
+  background-image: linear-gradient(180deg, #f9e9ff, #f9e9ff);
   box-shadow: 3px 3px 10px gray;
+}
+.functionality__restaurant:hover i {
+  color: #9356DC;
 }
 .functionality__restaurant--one {
   display: flex;
@@ -377,25 +387,26 @@ main {
 }
 .menu__Section--plat--checkDiv {
   display: none;
+  /*
   position: absolute;
-  background: #99E2D0;
+  background: $color-tertiary;
   border-radius: 0 15px 15px 0;
   right: 0px;
   padding: 0 13px;
   height: 100%;
-}
-.menu__Section--plat--checkDiv i {
-  font-size: 30px;
-  color: white;
-  transform: rotate(180deg);
-  animation: rotate 0.5s both;
-}
-.menu__Section--plat--checkDiv:hover .menu__Section--checkDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: slide-left 0.5s ease;
-  transform-origin: right;
+  i {
+      font-size: 30px;
+      color: white;
+      transform: rotate(180deg);
+      animation: rotate 0.5s both;
+  }
+  &:hover .menu__Section--checkDiv {
+      @include flexbox-center;
+      animation: slide-left 0.5s ease ;
+      transform-origin: right;
+
+  }
+  */
 }
 
 @media all and (min-width: 580px) {
@@ -469,12 +480,6 @@ main {
     margin: 0;
     width: 100%;
   }
-  .restaurants a {
-    color: #000;
-    text-decoration: none;
-    width: 40%;
-    margin: 35px 20px 35px 20px;
-  }
   .restaurants__restaurantDiv {
     display: flex;
     flex-direction: row;
@@ -487,6 +492,8 @@ main {
     border-radius: 20px 20px 20px 20px;
     transform: scale(1);
     transition: transform 500ms;
+    width: 40%;
+    margin: 35px 20px 35px 20px;
   }
   .restaurants__menu:hover {
     transform: scale(1.03);
@@ -530,21 +537,6 @@ main {
     font-weight: bold;
   }
 }
-/** PAGE 2 MENU **/
-/************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
-/****************************************************************************************************/
 .page__2 {
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;

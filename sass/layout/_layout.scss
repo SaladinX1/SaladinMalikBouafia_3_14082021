@@ -13,6 +13,11 @@ header {
 
 }
 
+.borderShadow {
+
+    box-shadow: 2px 1px 1px $color-Background;
+}
+
 main {
     font-family: 'Roboto', sans-serif;
   }
@@ -52,18 +57,22 @@ main {
 
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    justify-content: center; 
+    margin: auto;
 
     
     &__title {
 
         margin-left: 15px;
     }
+        
+    
+
     &__restaurant {
 
     @include choice;
-    background-color: $color-Background;
-    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    background-image: $color-Background;
+    transition: background-image 200ms ease-in-out, box-shadow 200ms ease-in-out;
     & i {
 
         padding-right: 25px;
@@ -73,8 +82,13 @@ main {
 
     &:hover{
 
-        background-color: $lightness-hover;
+        
+        background-image: linear-gradient(180deg, rgb(249, 233, 255),rgb(249, 233, 255));
         box-shadow: 3px 3px 10px gray;
+        i {
+
+            color: $color-primary;
+        }
 
 
     }
@@ -215,6 +229,10 @@ main {
             }
         
         } 
+        &__mail {
+            text-decoration: none;
+            color: $Background-div;
+        }
     }
     
     
@@ -242,7 +260,7 @@ main {
 
         display: flex;
         align-items: center;
-        position:relative;
+        position: relative;
     
             & i {
     
@@ -364,7 +382,7 @@ main {
                }
                &--checkDiv  {
                 display: none;
-                
+                /*
                 position: absolute;
                 background: $color-tertiary;
                 border-radius: 0 15px 15px 0;
@@ -381,7 +399,9 @@ main {
                     @include flexbox-center;
                     animation: slide-left 0.5s ease ;
                     transform-origin: right;
+
                 }
+                */
             }
 
             }

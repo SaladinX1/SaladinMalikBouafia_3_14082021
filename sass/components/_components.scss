@@ -1,49 +1,35 @@
-.btn {
 
-    border: 1px solid transparent;
-    background-image: $gradient;
-    margin: 20px 0 40px 0;
-    border-radius: 50px;
-    box-shadow: 2px 2px 5px gray;
 
-    &__p {
 
-        font-size: 1.4rem;
-        color: #fff;
-        padding: 0 40px 0 40px;
+
+ 
+
+ .heart-fill  {
+
+
+
+    transition: background-image 200ms ease-in-out, background-color 800ms ease-in-out;
+    
+     .full {
+         display: none;
+     }
+    
+
+  &:active {
+
+
+    .full {
+        display: block;
+        color: rgba($color: #ca3d9b, $alpha: 1.0) ;
     }
-}
 
-.commander {
+    .empty {
 
-    display: flex;
-    justify-content: center;
-    margin: 15px 0 15px 0;
-
- }
-
-
- 
- 
-
- .heart-fill i {
-
+            display:none;  
+    }
     
-    transition: background-image 800ms ease-in-out, background-color 800ms ease-in-out;
 
-  &:active{
-    &::before {
-        
-        background-image: $gradient;
-        background-color: $Background-div;
-}
-    
-}
-&::before {
-    
-    background-image: $Background-div;
-    background-color: $Background-div;
-}
 
+   }
 
 }
