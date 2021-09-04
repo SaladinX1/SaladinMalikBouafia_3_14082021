@@ -151,7 +151,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
+  margin: 40px auto 40px auto;
 }
 .functionality__title {
   margin-left: 15px;
@@ -163,7 +163,7 @@ main {
   align-items: center;
   background-color: #f2f2f2;
   padding: 15px 15px 15px 0;
-  margin: 15px 15px 15px 15px;
+  margin: 15px 15px 35px 15px;
   border-radius: 30px;
   box-shadow: 2px 2px 5px gray;
   background-image: #f2f2f2;
@@ -175,7 +175,7 @@ main {
   color: #ccc7c7;
 }
 .functionality__restaurant:hover {
-  background-image: linear-gradient(180deg, #f9e9ff, #f9e9ff);
+  background-image: linear-gradient(180deg, #fbf1ff, #f9e9ff);
   box-shadow: 3px 3px 10px gray;
 }
 .functionality__restaurant:hover i {
@@ -381,6 +381,9 @@ main {
 .plat .info .label {
   display: flex;
   flex-direction: column;
+}
+.plat .info .label > :last-child {
+  font-weight: normal;
 }
 .plat .info .price {
   align-self: flex-end;
