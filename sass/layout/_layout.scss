@@ -15,7 +15,10 @@ header {
 
 .borderShadow {
 
-    box-shadow: 2px 1px 1px $color-Background;
+    border: 0.5px solid $Background-div;
+    box-shadow: 0px 2.5px 2px rgb(155, 155, 155);
+    position: relative;
+    bottom: 3px;
 }
 
 main {
@@ -37,7 +40,7 @@ main {
         justify-content: center;
         align-items: center;
         font-size: 1.2rem;
-        background-color: #e4e0e0;
+        background-color: #e7e4e4;
         width: 100%;
         & i {
 

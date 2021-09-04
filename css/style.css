@@ -113,7 +113,10 @@ header h1 {
 }
 
 .borderShadow {
-  box-shadow: 2px 1px 1px #f2f2f2;
+  border: 0.5px solid #fff;
+  box-shadow: 0px 2.5px 2px #9b9b9b;
+  position: relative;
+  bottom: 3px;
 }
 
 main {
@@ -134,7 +137,7 @@ main {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  background-color: #e4e0e0;
+  background-color: #e7e4e4;
   width: 100%;
 }
 .reservation__location i {
