@@ -263,6 +263,10 @@ main {
   font-size: 1rem;
   padding-right: 15px;
 }
+.Contact__mail {
+  text-decoration: none;
+  color: #fff;
+}
 
 /** PAGE 2 MENU **/
 /************************************************************************/
