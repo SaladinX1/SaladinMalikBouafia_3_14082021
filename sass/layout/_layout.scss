@@ -100,7 +100,6 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
-        
         height: 20px;
         width: 20px;
         padding: 5px;
@@ -305,7 +304,7 @@ main {
                 margin: auto;
                 position: fixed;
                 top: 0; left: 0; right: 0; bottom: 0;
-                animation: spinner-border 2s linear ;
+                animation: spinner-circle 2s linear ;
                 z-index: 10;
                 visibility: hidden;
             }
@@ -402,14 +401,17 @@ main {
                       display: flex;
                       justify-content: space-between; 
                       height: 100%;
+                      width: 100%;
                     .info {
                       display: flex;
                       justify-content: space-between;
                       padding: 5px;
+                      width: 100%;
                       .label {
                          display: flex;
                          flex-direction: column;
                          justify-content: space-between;
+                         text-overflow: ellipsis;
                          
                          >:last-child{
                              font-weight: normal;
@@ -421,6 +423,7 @@ main {
                          }
                      }
                      .checkDiv  {
+                         
                       display: none;
                       background: $color-tertiary;
                       border-radius: 0 15px 15px 0;
@@ -443,7 +446,7 @@ main {
                         margin-right: 0;
                         animation: slide-left 0.5s ease ;
                         transform-origin: right;
-                        margin-left: 20px;
+                        
                         
                     }
              
