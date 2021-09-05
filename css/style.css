@@ -89,9 +89,6 @@
   margin: 15px 0 15px 0;
 }
 
-.heart-fill {
-  transition: background-image 200ms ease-in-out, background-color 800ms ease-in-out;
-}
 .heart-fill .full {
   display: none;
 }
@@ -114,7 +111,7 @@ header h1 {
 
 .borderShadow {
   border: 0.5px solid #fff;
-  box-shadow: 0px 2.5px 2px #9b9b9b;
+  box-shadow: 0px 2.5px 2px #585858;
   position: relative;
   bottom: 3px;
 }
@@ -362,6 +359,7 @@ main {
   margin: 20px 20px 20px 20px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
+  height: 78px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
   transform: scale(1);
   transition: transform 200ms ease-in-out;
@@ -373,45 +371,52 @@ main {
 .menu__Section--Div:hover {
   transform: scale(1.05);
 }
-
-.plat .info {
+.menu__Section--Div .plat {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
-.plat .info .label {
+.menu__Section--Div .plat .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+.menu__Section--Div .plat .info .label {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.plat .info .label > :last-child {
+.menu__Section--Div .plat .info .label > :last-child {
   font-weight: normal;
 }
-.plat .info .price {
+.menu__Section--Div .plat .info .price {
   align-self: flex-end;
   font-weight: bold;
 }
-.plat .checkDiv {
+.menu__Section--Div .plat .checkDiv {
   display: none;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
-  padding: 0 13px;
-  margin-right: -6.5rem;
+  padding: 0 5px;
+  margin-right: -5rem;
   width: 5rem;
-  height: 100%;
+  height: 78px;
 }
-.plat .checkDiv i {
-  font-size: 30px;
+.menu__Section--Div .plat .checkDiv i {
+  font-size: 40px;
   color: white;
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
-.plat .checkDiv:hover .checkDiv {
+.menu__Section--Div .plat:hover .checkDiv {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: block;
+  display: flex;
   margin-right: 0;
   animation: slide-left 0.5s ease;
   transform-origin: right;
+  margin-left: 20px;
 }
 
 @media all and (min-width: 580px) {
@@ -558,7 +563,7 @@ main {
 }
 
 .menu__Section--Div {
-  padding: 5px;
+  padding: 0;
   margin: 20px 20px 20px 20px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
