@@ -15,35 +15,35 @@
 }
 
 #case-2 {
-  animation-delay: 0.2s;
-}
-
-#case-3 {
   animation-delay: 0.3s;
 }
 
-#case-4 {
-  animation-delay: 0.4s;
-}
-
-#case-5 {
+#case-3 {
   animation-delay: 0.5s;
 }
 
-#case-6 {
-  animation-delay: 0.6s;
-}
-
-#case-7 {
+#case-4 {
   animation-delay: 0.7s;
 }
 
+#case-5 {
+  animation-delay: 0.9s;
+}
+
+#case-6 {
+  animation-delay: 1.1s;
+}
+
+#case-7 {
+  animation-delay: 1.3s;
+}
+
 #case-8 {
-  animation-delay: 0.8s;
+  animation-delay: 1.5s;
 }
 
 #case-9 {
-  animation-delay: 0.9s;
+  animation-delay: 1.7s;
 }
 
 @keyframes rotate {
@@ -75,7 +75,7 @@
     visibility: hidden;
   }
 }
-@keyframes spinner-border {
+@keyframes spinner-circle {
   0% {
     visibility: visible;
     opacity: 1;
@@ -137,7 +137,7 @@ header h1 {
 }
 
 .borderShadow {
-  border-bottom: 1px solid #fff;
+  border: 1px solid #fff;
   box-shadow: 0px 3px 2px #272626;
   position: relative;
   bottom: 3px;
@@ -189,7 +189,7 @@ main {
   padding: 15px 15px 15px 0;
   margin: 15px 15px 35px 15px;
   border-radius: 30px;
-  box-shadow: 2px 2px 5px gray;
+  box-shadow: 2px 2px 5px #c7c7c7;
   background-image: #f2f2f2;
   transition: background-image 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
@@ -364,7 +364,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
-  animation: spinner-border 2s linear;
+  animation: spinner-circle 2s linear;
   z-index: 10;
   visibility: hidden;
 }
@@ -431,10 +431,6 @@ main {
   transform: scale(1);
   transition: transform 200ms ease-in-out;
 }
-.menu__Section--Div p {
-  margin: 5px;
-  font-weight: bold;
-}
 .menu__Section--Div:hover {
   transform: scale(1.05);
 }
@@ -442,25 +438,39 @@ main {
   display: flex;
   justify-content: space-between;
   height: 100%;
+  width: 100%;
+  text-overflow: ellipsis;
 }
-.menu__Section--Div .plat .info {
+.menu__Section--Div .plat__info {
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
 }
-.menu__Section--Div .plat .info .label {
+.menu__Section--Div .plat__info .label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  width: 500px;
 }
-.menu__Section--Div .plat .info .label > :last-child {
+.menu__Section--Div .plat__info .label p {
+  width: 100%;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu__Section--Div .plat__info .label > :last-child {
   font-weight: normal;
 }
-.menu__Section--Div .plat .info .price {
+.menu__Section--Div .plat__info .price {
   align-self: flex-end;
   font-weight: bold;
 }
-.menu__Section--Div .plat .checkDiv {
+.menu__Section--Div .plat__checkDiv {
   display: none;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
@@ -469,13 +479,13 @@ main {
   width: 5rem;
   height: 78px;
 }
-.menu__Section--Div .plat .checkDiv i {
+.menu__Section--Div .plat__checkDiv i {
   font-size: 40px;
   color: white;
   transform: rotate(180deg);
   animation: rotate 0.5s both;
 }
-.menu__Section--Div .plat:hover .checkDiv {
+.menu__Section--Div .plat:hover .plat__checkDiv {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,7 +493,6 @@ main {
   margin-right: 0;
   animation: slide-left 0.5s ease;
   transform-origin: right;
-  margin-left: 20px;
 }
 
 @media all and (min-width: 580px) {
