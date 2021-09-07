@@ -1,16 +1,24 @@
 .btn {
 
     border: 1px solid transparent;
-    background-image: $gradient;
+    background: $gradient;
+    color: $Background-div;
+    opacity: 1;
     margin: 20px 0 40px 0;
     border-radius: 50px;
     box-shadow: 2px 2px 5px gray;
-
+    transition: background 300ms ease;
     &__p {
 
         font-size: 1.4rem;
         color: #fff;
         padding: 0 40px 0 40px;
+    }
+    &:hover {
+
+      opacity: 0.8 ;
+      box-shadow: 2px 2px 5px rgb(88, 88, 88);
+      transition: .3s;
     }
 }
 
