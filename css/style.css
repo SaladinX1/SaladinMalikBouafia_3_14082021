@@ -508,6 +508,31 @@ main {
     background-image: linear-gradient(to bottom, #fff, #99E2D0, #FF79DA);
   }
 
+  .reservation {
+    display: flex;
+    border-radius: 0 0 50px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: "Roboto";
+  }
+  .reservation__location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: #e7e4e4;
+    width: 100%;
+  }
+  .reservation__location i {
+    padding-right: 20px;
+  }
+  .reservation__Discover {
+    font-size: 1.5rem;
+  }
+
   .functionality {
     display: flex;
     flex-direction: column;
@@ -560,12 +585,13 @@ main {
 
   .restaurants {
     display: flex;
+    border-radius: 50px 50px 0 0;
     flex-direction: column;
     justify-content: flex-start;
     background-color: #f2f2f2;
     padding: 80px 15px 80px 15px;
   }
-  .restaurants h1 {
+  .restaurants h2 {
     text-align: center;
     color: #9356DC;
   }
