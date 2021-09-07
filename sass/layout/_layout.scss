@@ -74,7 +74,7 @@ main {
     &__restaurant {
 
     @include choice;
-    background-image: $color-Background;
+    background: $color-Background;
     transition: background-image 200ms ease-in-out, box-shadow 200ms ease-in-out;
     & i {
 

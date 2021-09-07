@@ -59,7 +59,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(1);
   }
 }
 @keyframes spinner {
@@ -198,7 +198,7 @@ main {
   margin: 15px 15px 35px 15px;
   border-radius: 30px;
   box-shadow: 2px 2px 5px #c7c7c7;
-  background-image: #f2f2f2;
+  background: #f2f2f2;
   transition: background-image 200ms ease-in-out, box-shadow 200ms ease-in-out;
 }
 .functionality__restaurant i {
@@ -552,7 +552,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     background-color: #f2f2f2;
-    padding: 15px 15px 15px 0p;
+    padding: 15px 15px 15px 0;
     margin: 15px 15px 15px 15px;
     width: 30%;
     border-radius: 30px;
@@ -677,7 +677,7 @@ main {
   margin: 20px 20px 20px 20px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
-  transform: scale(1), scaleX(right);
+  transform: scale(1);
   transition: transform 300ms ease-in-out;
 }
 .menu__Section--Div p {
