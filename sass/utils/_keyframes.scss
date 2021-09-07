@@ -1,5 +1,17 @@
 
 
+@keyframes heart {
+
+0% {
+        opacity: 0;
+}
+
+
+100%{
+   opacity: 1;
+}
+
+}
 
 @keyframes opacity {
 
@@ -49,6 +61,10 @@
 
 #case-9 {
     animation-delay: 1.7s;
+}
+
+#case-10 {
+    animation-delay: 1.9s;
 }
 
 @keyframes rotate {
