@@ -46,6 +46,10 @@
   animation-delay: 1.7s;
 }
 
+#case-10 {
+  animation-delay: 1.9s;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
