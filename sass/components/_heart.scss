@@ -6,7 +6,9 @@
 
  .heart-fill  {
 
+    font-size: 1.5rem;
 
+    
       
       
     
@@ -17,16 +19,19 @@
      
   &:active {
 
-
+   
     
 
     .full {
         display: block;
-        color: rgba($color: #ca3d9b, $alpha: 1.0) ;
+        color: rgba(  #e248f6, 1 ) ;
+        animation: heart 600ms ease-in-out  ;
+        
     }
 
     .empty {
-
+            
+            
             display:none; 
     }
     

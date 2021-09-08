@@ -1,9 +1,9 @@
-@media all and (min-width: 580px ) {
+@media all and (min-width: 580px )  {
 
 
     body {
 
-        background-image: linear-gradient( to bottom , $Background-div , $color-tertiary , $color-secondary);
+        background: linear-gradient( to bottom , $Background-div , $color-tertiary , $color-secondary) no-repeat;
     }
 
 
@@ -222,3 +222,41 @@
        
 
        }
+
+
+       .heart-fill  {
+
+        font-size: 1.5rem;
+    
+        
+          
+          
+        
+         .full {
+             display: none;
+         }
+        
+         
+      &:hover {
+    
+       
+        
+    
+        .full {
+            display: block;
+            color: rgba(  #e248f6, 1 ) ;
+            animation: heart 400ms ease-in-out  ;
+            
+        }
+    
+        .empty {
+                
+                
+                display:none; 
+        }
+        
+    
+    
+       }
+       
+    }

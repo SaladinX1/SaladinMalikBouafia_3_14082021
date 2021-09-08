@@ -117,7 +117,8 @@
   margin: 20px 0 40px 0;
   border-radius: 50px;
   box-shadow: 2px 2px 5px gray;
-  transition: background 300ms ease;
+  transform: scale(1);
+  transition: background 300ms ease, transform 300ms ease;
 }
 .btn__p {
   font-size: 1.4rem;
@@ -125,7 +126,8 @@
   padding: 0 40px 0 40px;
 }
 .btn:hover {
-  opacity: 0.8;
+  transform: scale(1.05);
+  opacity: 0.7;
   box-shadow: 2px 2px 5px #585858;
   transition: 0.3s;
 }
@@ -142,12 +144,12 @@
 .heart-fill .full {
   display: none;
 }
-.heart-fill:hover .full {
+.heart-fill:active .full {
   display: block;
   color: #e248f6;
-  animation: heart 800ms ease-in-out;
+  animation: heart 600ms ease-in-out;
 }
-.heart-fill:hover .empty {
+.heart-fill:active .empty {
   display: none;
 }
 
@@ -521,7 +523,7 @@ main {
 
 @media all and (min-width: 580px) {
   body {
-    background-image: linear-gradient(to bottom, #fff, #99E2D0, #FF79DA);
+    background: linear-gradient(to bottom, #fff, #99E2D0, #FF79DA) no-repeat;
   }
 
   .reservation {
@@ -673,6 +675,21 @@ main {
     font-weight: bold;
   }
 }
+.heart-fill {
+  font-size: 1.5rem;
+}
+.heart-fill .full {
+  display: none;
+}
+.heart-fill:hover .full {
+  display: block;
+  color: #e248f6;
+  animation: heart 400ms ease-in-out;
+}
+.heart-fill:hover .empty {
+  display: none;
+}
+
 .page__2 {
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
