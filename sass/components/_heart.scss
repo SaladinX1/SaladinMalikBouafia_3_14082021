@@ -6,11 +6,14 @@
 
  .heart-fill  {
 
-    font-size: 1.5rem;
 
-    
-      
-      
+   img{  
+    position: relative;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+   } 
+
     
      .full {
          display: none;
@@ -24,7 +27,7 @@
 
     .full {
         display: block;
-        color: rgba(  #e248f6, 1 ) ;
+        color: #e248f6  ;
         animation: heart 350ms ease-in-out  ;
         
     }

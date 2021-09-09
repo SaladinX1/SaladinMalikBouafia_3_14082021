@@ -150,8 +150,11 @@
   margin: 15px 0 15px 0;
 }
 
-.heart-fill {
-  font-size: 1.5rem;
+.heart-fill img {
+  position: relative;
+  top: 10px;
+  height: 30px;
+  width: 30px;
 }
 .heart-fill .full {
   display: none;
