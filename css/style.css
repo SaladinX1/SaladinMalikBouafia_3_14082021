@@ -2,6 +2,18 @@
   0% {
     opacity: 0;
   }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.9;
+  }
   100% {
     opacity: 1;
   }
@@ -147,7 +159,7 @@
 .heart-fill:active .full {
   display: block;
   color: #e248f6;
-  animation: heart 600ms ease-in-out;
+  animation: heart 350ms ease-in-out;
 }
 .heart-fill:active .empty {
   display: none;
@@ -521,7 +533,7 @@ main {
   transform-origin: right;
 }
 
-@media all and (min-width: 580px) {
+@media all and (min-width: 600px) {
   body {
     background: linear-gradient(to bottom, #fff, #99E2D0, #FF79DA) no-repeat;
   }
@@ -675,21 +687,6 @@ main {
     font-weight: bold;
   }
 }
-.heart-fill {
-  font-size: 1.5rem;
-}
-.heart-fill .full {
-  display: none;
-}
-.heart-fill:hover .full {
-  display: block;
-  color: #e248f6;
-  animation: heart 400ms ease-in-out;
-}
-.heart-fill:hover .empty {
-  display: none;
-}
-
 .page__2 {
   background-color: #f2f2f2;
   border-radius: 50px 50px 0 0;
