@@ -135,7 +135,7 @@
 .btn__p {
   font-size: 1.4rem;
   color: #fff;
-  padding: 0 40px 0 40px;
+  padding: 0 20px;
 }
 .btn:hover {
   transform: scale(1.05);
@@ -161,7 +161,6 @@
 }
 .heart-fill:active .full {
   display: block;
-  color: #e248f6;
   animation: heart 350ms ease-in-out;
 }
 .heart-fill:active .empty {
@@ -186,6 +185,46 @@ header h1 {
 
 main {
   font-family: "Roboto", sans-serif;
+}
+
+.spinner {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: spinner 2s linear;
+  visibility: hidden;
+}
+.spinner__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 15px solid transparent;
+  border-top: 15px solid #9356DC;
+  border-bottom: 15px solid #99E2D0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: spinner-circle 2s linear;
+  z-index: 10;
+  visibility: hidden;
+}
+.spinner__center {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FF79DA;
 }
 
 .reservation {
@@ -374,46 +413,6 @@ main {
 }
 .omf__menu h1 {
   margin: 10px 0 10px 0;
-}
-
-.spinner {
-  height: 100%;
-  background: white;
-  margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-  animation: spinner 2s linear;
-  visibility: hidden;
-}
-.spinner__border {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 15px solid transparent;
-  border-top: 15px solid #9356DC;
-  border-bottom: 15px solid #99E2D0;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  animation: spinner-circle 2s linear;
-  z-index: 10;
-  visibility: hidden;
-}
-.spinner__center {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #FF79DA;
 }
 
 .menu__image {
